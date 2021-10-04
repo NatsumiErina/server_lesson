@@ -1,0 +1,175 @@
+    1  ls /
+    2  ls /usr
+    3  pwd
+    4  cd /root
+    5  pwd
+    6  cd usr
+    7  cd /usr
+    8  pwd
+    9  cd /home
+   10  mkdir test1
+   11  ls
+   12  cd /home
+   13  mkdir test2/test3
+   14  cd /home
+   15  mkdir -p test2/test3
+   16  ls test2
+   17  cd /home
+   18  touch test1/index.php
+   19  ls test1
+   20  cd /home/test1 && ls
+   21  cd /home/test1
+   22  cp index.php copy.php
+   23  ls
+   24  cd /home
+   25  cp -r test1 test4
+   26  ls
+   27  ls test4
+   28  ls
+   29  cd /home
+   30  mv test2/test3 test3
+   31  ls
+   32  cd /home
+   33  mv test4 test1_copy
+   34  ls
+   35  cd /home
+   36  ls test1
+   37  rm test1/copy.php
+   38  ls test1
+   39  cd /home
+   40  rm -r test3
+   41  ls
+   42  cd /home
+   43  rm test1_copy/*.php
+   44  ls test1_copy
+   45  cd /home
+   46  echo '# Hello World' > README.md
+   47  cat README.md
+   48  echo '# Server Lesson' > README.md
+   49  cat README.md
+   50  cd /home
+   51  echo 'Linux Practice' >> README.md
+   52  echo '-----------------' >> README.md
+   53  cat README.md
+   54  cd /home
+   55  vi README.md
+   56  vi README.md
+   57  cd /root
+   58  mkdir server_lesson && cd server_lesson
+   59  ls
+   60  cd /root
+   61  ls
+   62  cd server_lesson
+   63  git version
+   64  yum update -y && yum -y install git
+   65  git version
+   66  git init
+   67  touch first.txt
+   68  git add
+   69  git commit
+   70  git add .
+   71  git commit
+   72  ls
+   73  cd server_lesson
+   74  git add .
+   75  git commit
+   76  git remote add origin https://github.com/NatsumiErina/server_lesson.git
+   77  git remote -v
+   78  git push origin master
+   79  git add .
+   80  git commit
+   81  git push -u
+   82  git status
+   83  git add .
+   84  git status
+   85  git commit -m 'first commit'
+   86  git status
+   87  git config --global user.email hiyokoatetomatooo@gmail.com
+   88  git config --global user.name "NatsumiErina"
+   89  git commit -m 'first commit'
+   90  git remote add origin https://github.com/NatsumiErina/server_lesson.git
+   91  git remote -v
+   92  git push origin master
+   93  git push origin master
+   94  git push origin master
+   95  git push -u
+   96  git init
+   97  git status
+   98  pwd
+   99  mkdir linux_practice1
+  100  ls
+  101  git status
+  102  git add .
+  103  git status
+  104  mkdir linux_practice1/public
+  105  ls
+  106  cd linux_practice1
+  107  ls
+  108  touch public/index.php
+  109  ls
+  110  git status
+  111  git add .
+  112  git status
+  113  git commit -m 'first commit'
+  114  git status
+  115  git log
+  116  git remote add origin https://github.com/NatsumiErina/server_lesson.git
+  117  git remote -v
+  118  git push origin master
+  119  git push origin master
+  120  git push origin master
+  121  ls
+  122  cd public
+  123  cp index.php index_bk.php
+  124  ls
+  125  cd ../../
+  126  pwd
+  127  ls
+  128  cd linux_practice1
+  129  cp public tmp
+  130  ls
+  131  cp -r public tmp
+  132  ls
+  133  ls tmp
+  134  cd tmp
+  135  ls
+  136  rm index_bk.php
+  137  ls
+  138  cd ../../
+  139  pwd
+  140  touch README.md
+  141  ls
+  142  vi README.md
+  143  git add .
+  144  git commit -m '練習問題1'
+  145  git push origin master
+  146  mkdir linux_practice2
+  147  ls
+  148  mkdir linux_practice2/documents
+  149  cd linux_practice2
+  150  ls
+  151  touch documents/gizumo{01..50}.md
+  152  ls documents
+  153  cd ../../
+  154  pwd
+  155  ls
+  156  cd server_lesson
+  157  mkdir linux_practice2/trash
+  158  ls linux_practice2
+  159  mv documents/gizumo{20..40}.md trash/
+  160  mv documents/gizumo{20..40}.md /trash
+  161  mv documents/gizumo{20..40}.md trash
+  162  cdlinux_practice2
+  163  cd linux_practice2
+  164  mv documents/gizumo{20..40}.md /trash
+  165  ls
+  166  mv documents/gizumo{20..40}.md trash
+  167  ls trash
+  168  ls documents
+  169  cd ..
+  170  touch linux_practice2/.gitignore
+  171  ls linux_practice2
+  172  vi .gitignore
+  173  ls
+  174  cd linux_practice2
+  175  history 300 > exec_command.log
